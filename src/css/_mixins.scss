@@ -1,0 +1,29 @@
+@mixin _media ($screen) {
+	@if ($screen == "sm") {
+		@media screen and (min-width: 576px) {
+			@content;
+		}
+	}
+	@if ($screen == "md") {
+		@media screen and (min-width: 768px) {
+			@content;
+		}
+	}
+	@if ($screen == "lg") {
+		@media screen and (min-width: 992px) {
+			@content;
+		}
+	}
+	@if ($screen == "xl") {
+		@media screen and (min-width: 1200px) {
+			@content;
+		}
+	}
+
+	/* @if ($screen == "lg-only") {
+		@media screen and (min-width: 992px) and (max-width: 1201px) {
+			@content;
+		}
+	} */
+}
+
